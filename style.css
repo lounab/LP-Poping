@@ -29,6 +29,18 @@ body {
     justify-content: space-around;
 }
 
+h1{
+    z-index: 10;
+    position: relative;
+    text-align: center;
+}
+
+@media screen and (max-width: 637px) {
+    h1{
+        margin-bottom: 0;
+    }
+}
+
 body .round {
     z-index: 1;
     position: absolute;
@@ -54,6 +66,12 @@ body .round {
     z-index: 100;
     backdrop-filter: blur(8px);
 }   
+
+.form p{
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+}
 
 .form .reste{
     padding: 10px 0px;
