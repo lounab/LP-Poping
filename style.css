@@ -84,6 +84,14 @@ body .round {
     padding: 10px;
 }
 
+.form .reste textarea{
+    height: 50px;
+    width: -webkit-fill-available;
+    padding: 10px;
+    border: 0;
+    font-family: 'Poppins';
+}
+
 .form input{
     border: none;
     font-family: 'Poppins';
@@ -189,7 +197,7 @@ body .round {
         gap: 10%;
         padding: 0 40px;
         height: inherit;
-        margin: 20px 0;
+        margin: 20px 0 40px;
     }
     
     .form{
