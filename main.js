@@ -6,6 +6,7 @@ function handleForm(event) {
     const name = document.getElementById("input_name").value
     const prenom = document.getElementById("input_prenom").value
     const email = document.getElementById("input_email").value
+    const avis = document.getElementById("input_avis").value
     let civilite =""
 
     function displayRadioValue() {
@@ -34,7 +35,8 @@ function handleForm(event) {
             "Nom": name,
             "Prenom": prenom, 
             "Civilite": civilite,
-            "Email": email
+            "Email": email,
+            "Avis": avis
         }
         }
     ]
@@ -54,6 +56,7 @@ function handleForm(event) {
         document.getElementById("input_name").value = ""
         document.getElementById("input_prenom").value = ""
         document.getElementById("input_email").value = ""
+        document.getElementById("input_avis").value = ""
         alert("Merci pour votre inscription")
     })
     .catch(error => console.log('error', error));
