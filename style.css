@@ -33,6 +33,8 @@ h1{
     z-index: 10;
     position: relative;
     text-align: center;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 637px) {
@@ -186,6 +188,8 @@ body .round {
         justify-content: center;
         gap: 10%;
         padding: 0 40px;
+        height: inherit;
+        margin: 20px 0;
     }
     
     .form{
@@ -226,6 +230,14 @@ body .round {
 }
 
 @media screen and (max-width: 470px) {
+    #home{
+        height: initial;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
     .form .civilite {
         display: flex;
         justify-content: space-evenly;
