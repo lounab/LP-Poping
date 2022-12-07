@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+body {
+  font-family: 'Poppins';
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFEFCD;
+}
+
+body {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#home{
+    display: flex;
+    flex-direction: row;
+    padding: 0 120px;
+    color: #424530;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body .round {
+    z-index: 1;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    left: -87px;
+    top: 149px;
+    background: #E09132;
+}
+
+.logo{
+    z-index: 20;
+    position: relative;
+    height: 150px;
+}
+
+.form{
+    background-color: rgb(255 255 255 / 50%);
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    z-index: 100;
+}   
+
+.form .reste{
+    padding: 10px 0px;
+}
+
+.form .reste input{
+    width: -webkit-fill-available;
+    padding: 10px;
+}
+
+.form input{
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.form .civilite{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.form button{
+    background-color: #e09132;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover{
+    background-color: #de7f0e;
+}
+
+
+.reassurance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.reassurance div{
+    width: 30%;
+    background: rgb(255 255 255 / 50%);
+    border-radius: 10px;
+}
+
+.reassurance div h2{
+    text-align: center;
+}
+
+.reassurance div p, .reassurance div li{
+    padding: 0 25px;
+}
+
+.reassurance div li:last-child{
+    padding-bottom: 30px;
+}
+
+
+#salade {
+    z-index: 1;
+    position: absolute;
+    height: 101%;
+    right: -20%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-animation: rotation 50s infinite linear;
+            animation: rotation 50s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+    }
+    }
+
+    @keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1230px) {
+    #salade {
+        display: none;
+    }
+
+    #home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10%;
+        padding: 0 40px;
+    }
+    
+    .form{
+        width: 50%;
+    }
+
+    .reassurance{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 10%;
+        align-items: center;
+        gap: 26px;
+    }
+
+    .reassurance div {
+        width: 63%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .form{
+        width: 75%;
+    }
+
+    .form .civilite {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 0;
+    }
+    .logo {
+        width: 77vw;
+    }
+
+    .reassurance div {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .form .civilite {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    body .round {
+        z-index: 1;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        left: -125px;
+        top: 123px;
+        background: #E09132;
+    }
+}
